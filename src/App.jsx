@@ -3,41 +3,48 @@ import cover from "./assets/cover.jpg";
 import "./App.css";
 
 function App() {
-  const [secValue, setSecValue] = useState(55);
-  const [minValue, setMinValue] = useState(2);
-  const [hourValue, setHourValue] = useState(2);
-  const [dayValue, setDayValue] = useState(55);
+  const targetDate = new Date("April 14, 2024 00:00:00").getTime();
+  const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
+
+  function calculateTimeRemaining() {
+    const now = new Date().getTime();
+    const timeDifference = targetDate - now;
+
+    if (timeDifference <= 0) {
+      // If the target date has passed, set the time remaining to zero
+      return {
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+      };
+    }
+
+    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor(
+      (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
+    );
+    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+    return {
+      days,
+      hours,
+      minutes,
+      seconds,
+    };
+  }
 
   useEffect(() => {
-    const timeFunction = setInterval(() => {
-      setSecValue((prevSecValue) => {
-        if (prevSecValue === 0) {
-          setMinValue((prevMinValue) => {
-            if (prevMinValue === 0) {
-              setHourValue((prevHourValue) => {
-                if (prevHourValue === 0) {
-                  setDayValue((prevDayValue) => {
-                    if (prevDayValue === 0) {
-                      clearInterval(timeFunction);
-                      return 0;
-                    }
-                    return prevDayValue - 1;
-                  });
-                  return 24;
-                }
-                return prevHourValue - 1;
-              });
-              return 60;
-            }
-            return prevMinValue - 1;
-          });
-          return 60;
-        }
-        return prevSecValue - 1;
-      });
+    const interval = setInterval(() => {
+      setTimeRemaining(calculateTimeRemaining());
     }, 1000);
 
-    return () => clearInterval(timeFunction);
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   return (
@@ -62,27 +69,19 @@ function App() {
 
         <div className="time-content absolute bottom-0 lg:left-1/2 lg:-translate-x-1/2 md:left-1/2 md:-translate-x-1/2">
           <div className="time days">
-            <span className="number">
-              {dayValue < 10 ? `0${dayValue}` : dayValue}
-            </span>
+            <span className="number">{timeRemaining.days}</span>
             <span className="text">days</span>
           </div>
           <div className="time hours">
-            <span className="number">
-              {hourValue < 10 ? `0${hourValue}` : hourValue}
-            </span>
+            <span className="number">{timeRemaining.hours}</span>
             <span className="text">hours</span>
           </div>
           <div className="time minutes">
-            <span className="number">
-              {minValue < 10 ? `0${minValue}` : minValue}
-            </span>
+            <span className="number">{timeRemaining.minutes}</span>
             <span className="text">minutes</span>
           </div>
           <div className="time seconds">
-            <span className="number">
-              {secValue < 10 ? `0${secValue}` : secValue}
-            </span>
+            <span className="number">{timeRemaining.seconds}</span>
             <span className="text">seconds</span>
           </div>
         </div>
