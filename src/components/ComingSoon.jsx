@@ -61,13 +61,11 @@ const ComingSoon = () => {
           <div className="col-xxl-6 col-xl-6 col-lg-6 px-0">
             <div className="dz-coming-bx single-page">
               <div className="logo">
-                <a href="index-2.html">
-                  <img src="images/logo.png" alt="" />
-                </a>
+                <img src="images/logo2.png" alt="" />
               </div>
               <div className="dz-content">
                 <h2 className="dz-title pe-xl-4">
-                  Our awesome new site is almost ready to launch!
+                  Our awesome new site is almost ready.
                 </h2>
                 <h1 className="lg:text-4xl text-lg mt-5">
                   Keep an eye on our{" "}
@@ -113,10 +111,12 @@ const ComingSoon = () => {
           </div>
           <div className="col-xxl-6 col-xl-6 col-lg-6 px-0  d-lg-block d-none">
             <div
-              className="dz-coming-bx2"
+              className="dz-coming-bx2s"
               style={{
-                backgroundImage: "url(`images/image.png`)",
+                backgroundImage: "url(images/image.png)",
                 backgroundPosition: "center center",
+                backgroundSize: "cover",
+                height: "100%",
               }}
             >
               <img src="images/circle-lines2.png" className="bg-img2" alt="" />
