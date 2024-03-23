@@ -41968,7 +41968,7 @@ del {
 }
 
 .banner-social-media.style-1 ul li a {
-  color: var(--title);
+  color: #fff;
 }
 
 @media only screen and (max-width: 1280px) {
