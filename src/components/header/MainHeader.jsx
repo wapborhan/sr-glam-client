@@ -43,7 +43,7 @@ const MainHeader = () => {
           <div className="header-search-nav">
             <form className="header-item-search">
               <div className="input-group search-input">
-                <select className="default-select">
+                <select className="default-select selectpickers">
                   <option>All Categories</option>
                   <option>Photography</option>
                   <option>Arts</option>
