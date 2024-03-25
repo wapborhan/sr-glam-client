@@ -80,7 +80,7 @@ const SideBarCart = () => {
                             <h6 className="dz-price mb-0">$50.00</h6>
                           </div>
                         </div>
-                        <a href="javascript:void(0);" className="dz-close">
+                        <a href="#" className="dz-close">
                           <i className="ti-close"></i>
                         </a>
                       </div>
@@ -107,7 +107,7 @@ const SideBarCart = () => {
                             <h6 className="dz-price mb-0">$40.00</h6>
                           </div>
                         </div>
-                        <a href="javascript:void(0);" className="dz-close">
+                        <a href="#" className="dz-close">
                           <i className="ti-close"></i>
                         </a>
                       </div>
@@ -134,7 +134,7 @@ const SideBarCart = () => {
                             <h6 className="dz-price mb-0">$65.00</h6>
                           </div>
                         </div>
-                        <a href="javascript:void(0);" className="dz-close">
+                        <a href="#" className="dz-close">
                           <i className="ti-close"></i>
                         </a>
                       </div>
@@ -203,7 +203,7 @@ const SideBarCart = () => {
                             <h6 className="dz-price mb-0">$50.00</h6>
                           </div>
                         </div>
-                        <a href="javascript:void(0);" className="dz-close">
+                        <a href="#" className="dz-close">
                           <i className="ti-close"></i>
                         </a>
                       </div>
@@ -223,7 +223,7 @@ const SideBarCart = () => {
                             <h6 className="dz-price mb-0">$40.00</h6>
                           </div>
                         </div>
-                        <a href="javascript:void(0);" className="dz-close">
+                        <a href="#" className="dz-close">
                           <i className="ti-close"></i>
                         </a>
                       </div>
@@ -243,7 +243,7 @@ const SideBarCart = () => {
                             <h6 className="dz-price mb-0">$65.00</h6>
                           </div>
                         </div>
-                        <a href="javascript:void(0);" className="dz-close">
+                        <a href="#" className="dz-close">
                           <i className="ti-close"></i>
                         </a>
                       </div>

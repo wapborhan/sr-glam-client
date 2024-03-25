@@ -313,10 +313,7 @@ const SidebarFinter = () => {
               <a href="blog-tag.html">Formal</a>
             </div>
           </div>
-          <a
-            href="javascript:void(0);"
-            className="btn btn-sm font-14 btn-secondary btn-sharp"
-          >
+          <a href="#" className="btn btn-sm font-14 btn-secondary btn-sharp">
             RESET
           </a>
         </div>

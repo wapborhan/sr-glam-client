@@ -12,7 +12,7 @@ const MainHeader = () => {
 
           <div className="extra-nav d-md-flex d-none">
             <div className="extra-cell">
-              <ul className="navbar-nav header-right m-0">
+              <ul className="ml-3  navbar-nav header-right">
                 <li className="nav-item info-box">
                   <div className="nav-link">
                     <div className="dz-icon">
@@ -107,7 +107,7 @@ const MainHeader = () => {
                 </a>
               </div>
               <div className="browse-category-menu">
-                <a href="javascript:void(0);" className="category-btn">
+                <a href="#" className="category-btn">
                   <div className="category-menu me-3">
                     <span></span>
                     <span></span>
@@ -123,11 +123,11 @@ const MainHeader = () => {
                 </a>
                 <div
                   className="category-menu-items"
-                  //  style="display: none"
+                  style={{ display: "none" }}
                 >
                   <ul className="nav navbar-nav">
                     <li className="has-mega-menu cate-drop">
-                      <a href="javascript:void(0);">
+                      <a href="#">
                         <i className="icon feather icon-arrow-right"></i>
                         <span>Bamboo Products</span>
                         <span className="menu-icon">
@@ -137,10 +137,7 @@ const MainHeader = () => {
                       <div className="mega-menu">
                         <div className="row">
                           <div className="col-md-3 col-sm-4 col-6">
-                            <a
-                              href="javascript:void(0);"
-                              className="menu-title"
-                            >
+                            <a href="#" className="menu-title">
                               Smart Home Products
                             </a>
                             <ul>
@@ -419,7 +416,7 @@ const MainHeader = () => {
                       </div>
                     </li>
                     <li className="cate-drop">
-                      <a href="javascript:void(0);">
+                      <a href="#">
                         <i className="icon feather icon-arrow-right"></i>
                         <span>Fitness Trackers</span>
                         <span className="menu-icon">
@@ -516,7 +513,7 @@ const MainHeader = () => {
                       </a>
                     </li>
                     <li className="menu-items">
-                      <a href="javascript:void(0);">
+                      <a href="#">
                         <i className="flaticon-blocks me-3"></i>
                         <span>More Products</span>
                         <span className="menu-icon">
@@ -529,704 +526,34 @@ const MainHeader = () => {
               </div>
               <ul className="nav navbar-nav dark-nav">
                 <li className="has-mega-menu sub-menu-down">
-                  <a href="javascript:void(0);">
+                  <a href="#">
                     <span>Home</span>
                     <i className="fas fa-chevron-down tabindex"></i>
                   </a>
-                  <div className="mega-menu demo-menu">
-                    <div className="row">
-                      <div className="col-md-4 col-6">
-                        <a href="index-2.html">
-                          <img src="images/demo/demo-1.png" alt="/" />
-                          <span className="menu-title">01 Home Page</span>
-                        </a>
-                      </div>
-                      <div className="col-md-4 col-6">
-                        <a href="index-3.html">
-                          <img src="images/demo/demo-2.png" alt="/" />
-                          <span className="menu-title">02 Home Page</span>
-                        </a>
-                      </div>
-                      <div className="col-md-4 col-6">
-                        <a href="index-4.html">
-                          <img src="images/demo/demo-3.png" alt="/" />
-                          <span className="menu-title">03 Home Page</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
                 </li>
                 <li className="has-mega-menu sub-menu-down">
-                  <a href="javascript:void(0);">
+                  <a href="#">
                     <span>Shop</span>
                     <i className="fas fa-chevron-down tabindex"></i>
                   </a>
-                  <div className="mega-menu shop-menu">
-                    <div className="row">
-                      <div className="col-lg-8 col-md-12 col-sm-12">
-                        <div className="row">
-                          <div className="col-md-4 col-sm-4 col-6">
-                            <a href="javascript:;" className="menu-title">
-                              Shop Structure
-                            </a>
-                            <ul>
-                              <li>
-                                <a href="shop-standard.html">Shop Standard</a>
-                              </li>
-                              <li>
-                                <a href="shop-list.html">Shop List</a>
-                              </li>
-                              <li>
-                                <a href="shop-with-category.html">
-                                  Shop With Category
-                                </a>
-                              </li>
-                              <li>
-                                <a href="shop-filters-top-bar.html">
-                                  Shop Filters Top Bar
-                                </a>
-                              </li>
-                              <li>
-                                <a href="shop-sidebar.html">Shop Sidebar</a>
-                              </li>
-                              <li>
-                                <a href="shop-style-1.html">Shop Style 1</a>
-                              </li>
-                              <li>
-                                <a href="shop-style-2.html">Shop Style 2</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div className="col-md-4 col-sm-4 col-6">
-                            <a href="javascript:;" className="menu-title">
-                              Product Structure
-                            </a>
-                            <ul>
-                              <li>
-                                <a href="product-default.html">Default</a>
-                              </li>
-                              <li>
-                                <a href="product-thumbnail.html">Thumbnail</a>
-                              </li>
-                              <li>
-                                <a href="product-grid-media.html">Grid Media</a>
-                              </li>
-                              <li>
-                                <a href="product-carousel.html">Carousel</a>
-                              </li>
-                              <li>
-                                <a href="product-full-width.html">Full Width</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div className="col-md-4 col-sm-4 col-12">
-                            <a href="javascript:;" className="menu-title">
-                              Shop Pages
-                            </a>
-                            <ul>
-                              <li>
-                                <a href="shop-wishlist.html">Wishlist</a>
-                              </li>
-                              <li>
-                                <a href="shop-cart.html">Cart</a>
-                              </li>
-                              <li>
-                                <a href="shop-checkout.html">Checkout</a>
-                              </li>
-                              <li>
-                                <a href="shop-compare.html">Compare</a>
-                              </li>
-                              <li>
-                                <a href="shop-order-tracking.html">
-                                  Order Tracking
-                                </a>
-                              </li>
-                              <li>
-                                <a href="shop-my-account.html">My Account</a>
-                              </li>
-                              <li>
-                                <a href="shop-registration.html">
-                                  Registration
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div className="row">
-                          <div className="col-md-12">
-                            <div className="month-deal">
-                              <div>
-                                <h3>Deal of the month</h3>
-                                <p className="mb-0">
-                                  Yes! Send me exclusive offers, personalised,
-                                  and unique gift ideas, tips for shopping on
-                                  Pixio
-                                  <a
-                                    href="shop-standard.html"
-                                    className="dz-link-2"
-                                  >
-                                    View All Products
-                                  </a>
-                                </p>
-                              </div>
-                              <div className="sale-countdown">
-                                <div className="countdown text-center">
-                                  <div className="date">
-                                    <span className="time days text-primary"></span>
-                                    <span className="work-time">Days</span>
-                                  </div>
-                                  <div className="date">
-                                    <span className="time hours text-primary"></span>
-                                    <span className="work-time">Hours</span>
-                                  </div>
-                                  <div className="date">
-                                    <span className="time mins text-primary"></span>
-                                    <span className="work-time">Minutess</span>
-                                  </div>
-                                  <div className="date">
-                                    <span className="time secs text-primary"></span>
-                                    <span className="work-time">Second</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-4 d-none d-lg-block">
-                        <div className="adv-media">
-                          <img src="images/adv-1.png" alt="/" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </li>
                 <li className="has-mega-menu sub-menu-down">
-                  <a href="javascript:void(0);">
+                  <a href="#">
                     <span>Blog</span>
                     <i className="fas fa-chevron-down tabindex"></i>
                   </a>
-                  <div className="mega-menu">
-                    <div className="row">
-                      <div className="col-md-3 col-sm-6 col-6">
-                        <a href="javascript:;" className="menu-title">
-                          Blog Dark Style
-                        </a>
-                        <ul>
-                          <li>
-                            <a href="blog-dark-2-column.html">Blog 2 Column</a>
-                          </li>
-                          <li>
-                            <a href="blog-dark-2-column-sidebar.html">
-                              Blog 2 Column Sidebar
-                            </a>
-                          </li>
-                          <li>
-                            <a href="blog-dark-3-column.html">Blog 3 Column</a>
-                          </li>
-                          <li>
-                            <a href="blog-dark-half-image.html">
-                              Blog Half Image
-                            </a>
-                          </li>
-                        </ul>
-                        <a href="javascript:;" className="menu-title">
-                          Blog Light Style
-                        </a>
-                        <ul>
-                          <li>
-                            <a href="blog-light-2-column.html">Blog 2 Column</a>
-                          </li>
-                          <li>
-                            <a href="blog-light-2-column-sidebar.html">
-                              Blog 2 Column Sidebar
-                            </a>
-                          </li>
-                          <li>
-                            <a href="blog-light-half-image.html">
-                              Blog Half Image
-                            </a>
-                          </li>
-                          <li>
-                            <a href="blog-exclusive.html">Blog Exclusive</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="col-md-3 col-sm-6 col-6">
-                        <a href="javascript:;" className="menu-title">
-                          Blog Sidebar
-                        </a>
-                        <ul>
-                          <li>
-                            <a href="blog-left-sidebar.html">
-                              Blog left Sidebar
-                            </a>
-                          </li>
-                          <li>
-                            <a href="blog-right-sidebar.html">
-                              Blog Right Sidebar
-                            </a>
-                          </li>
-                          <li>
-                            <a href="blog-both-sidebar.html">
-                              Blog Both Sidebar
-                            </a>
-                          </li>
-                          <li>
-                            <a href="blog-wide-sidebar.html">
-                              Blog Wide Sidebar
-                            </a>
-                          </li>
-                        </ul>
-
-                        <a href="javascript:;" className="menu-title">
-                          Blog Page
-                        </a>
-                        <ul>
-                          <li>
-                            <a href="blog-archive.html">Blog Archive</a>
-                          </li>
-                          <li>
-                            <a href="blog-author.html">Author</a>
-                          </li>
-                          <li>
-                            <a href="blog-category.html">Blog Category</a>
-                          </li>
-                          <li>
-                            <a href="blog-tag.html">Blog Tag</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="col-md-3 col-sm-6 col-6">
-                        <a href="javascript:;" className="menu-title">
-                          Blog Details
-                        </a>
-                        <ul>
-                          <li>
-                            <a href="post-standard.html">Post Standard</a>
-                          </li>
-                          <li>
-                            <a href="post-left-sidebar.html">
-                              Post Left Sidebar
-                            </a>
-                          </li>
-                          <li>
-                            <a href="post-header-image.html">
-                              Post Header Image
-                            </a>
-                          </li>
-                          <li>
-                            <a href="post-slide-show.html">Post Slide Show</a>
-                          </li>
-                          <li>
-                            <a href="post-side-image.html">Post Side Image</a>
-                          </li>
-                          <li>
-                            <a href="post-gallery.html">Post Gallery</a>
-                          </li>
-                          <li>
-                            <a href="post-gallery-alternative.html">
-                              Post Gallery Alternative
-                            </a>
-                          </li>
-                          <li>
-                            <a href="post-open-gutenberg.html">
-                              Post Open Gutenberg
-                            </a>
-                          </li>
-                          <li>
-                            <a href="post-link.html">Post Link</a>
-                          </li>
-                          <li>
-                            <a href="post-audio.html">Post Audio</a>
-                          </li>
-                          <li>
-                            <a href="post-video.html">Post Video</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="col-md-3 col-sm-6 col-12">
-                        <a href="javascript:;" className="menu-title">
-                          Recent Posts
-                        </a>
-                        <div className="widget widget_post pt-2">
-                          <ul>
-                            <li>
-                              <div className="dz-media">
-                                <img
-                                  src="images/shop/product/small/1.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div className="dz-content">
-                                <h6 className="name">
-                                  <a href="post-standard.html">
-                                    Cozy Knit Cardigan Sweater
-                                  </a>
-                                </h6>
-                                <span className="time">July 23, 2023</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="dz-media">
-                                <img
-                                  src="images/shop/product/small/2.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div className="dz-content">
-                                <h6 className="name">
-                                  <a href="post-standard.html">
-                                    Sophisticated Swagger Suit
-                                  </a>
-                                </h6>
-                                <span className="time">July 23, 2023</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="dz-media">
-                                <img
-                                  src="images/shop/product/small/3.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div className="dz-content">
-                                <h6 className="name">
-                                  <a href="post-standard.html">
-                                    Athletic Mesh Sports Leggings
-                                  </a>
-                                </h6>
-                                <span className="time">July 23, 2023</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="dz-media">
-                                <img
-                                  src="images/shop/product/small/4.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div className="dz-content">
-                                <h6 className="name">
-                                  <a href="post-standard.html">
-                                    Satin Wrap Party Blouse
-                                  </a>
-                                </h6>
-                                <span className="time">July 23, 2023</span>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </li>
                 <li className="has-mega-menu sub-menu-down">
-                  <a href="javascript:void(0);">
+                  <a href="#">
                     <span>Portfolio</span>
                     <i className="fas fa-chevron-down tabindex"></i>
                   </a>
-                  <div className="mega-menu portfolio-menu">
-                    <div className="row">
-                      <div className="col-xl-10 col-lg-9 col-md-9 pe-xl-5 pe-md-3 col-sm-8">
-                        <ul className="row portfolio-nav-link">
-                          <li className="col">
-                            <a href="portfolio-tiles.html">
-                              <img
-                                src="images/portfolio/icons/portfolio-tiles.svg"
-                                alt="/"
-                              />
-                              <span>Portfolio Tiles</span>
-                            </a>
-                          </li>
-                          <li className="col">
-                            <a href="collage-style-1.html">
-                              <img
-                                src="images/portfolio/icons/collage-style-1.svg"
-                                alt="/"
-                              />
-                              <span>Collage Style 1</span>
-                            </a>
-                          </li>
-                          <li className="col">
-                            <a href="collage-style-2.html">
-                              <img
-                                src="images/portfolio/icons/collage-style-2.svg"
-                                alt="/"
-                              />
-                              <span>Collage Style 2</span>
-                            </a>
-                          </li>
-                          <li className="col">
-                            <a href="masonry-grid.html">
-                              <img
-                                src="images/portfolio/icons/masonry-grid.svg"
-                                alt="/"
-                              />
-                              <span>Masonry Grid</span>
-                            </a>
-                          </li>
-                          <li className="col">
-                            <a href="cobble-style-1.html">
-                              <img
-                                src="images/portfolio/icons/cobble-style-1.svg"
-                                alt="/"
-                              />
-                              <span>Cobble Style 1</span>
-                            </a>
-                          </li>
-                          <li className="col">
-                            <a href="cobble-style-2.html">
-                              <img
-                                src="images/portfolio/icons/cobble-style-2.svg"
-                                alt="/"
-                              />
-                              <span>Cobble Style 2</span>
-                            </a>
-                          </li>
-                          <li className="col">
-                            <a href="portfolio-thumbs-slider.html">
-                              <img
-                                src="images/portfolio/icons/portfolio-thumbs-slider.svg"
-                                alt="/"
-                              />
-                              <span>Portfolio Thumbs Slider</span>
-                            </a>
-                          </li>
-                          <li className="col">
-                            <a href="portfolio-film-strip.html">
-                              <img
-                                src="images/portfolio/icons/portfolio-film-strip.svg"
-                                alt="/"
-                              />
-                              <span>Portfolio Film Strip</span>
-                            </a>
-                          </li>
-                          <li className="col">
-                            <a href="carousel-showcase.html">
-                              <img
-                                src="images/portfolio/icons/carousel-showcase.svg"
-                                alt="/"
-                              />
-                              <span>Carousel Showcase</span>
-                            </a>
-                          </li>
-                          <li className="col">
-                            <a href="portfolio-split-slider.html">
-                              <img
-                                src="images/portfolio/icons/portfolio-split-slider.svg"
-                                alt="/"
-                              />
-                              <span>Portfolio Split Slider</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="col-xl-2 col-lg-3 col-md-3 line-left ps-3 pe-0 col-sm-4">
-                        <a href="javascript:;" className="menu-title">
-                          Portfolio Details
-                        </a>
-                        <ul>
-                          <li>
-                            <a href="portfolio-details-1.html">
-                              Portfolio Details 1
-                            </a>
-                          </li>
-                          <li>
-                            <a href="portfolio-details-2.html">
-                              Portfolio Details 2
-                            </a>
-                          </li>
-                          <li>
-                            <a href="portfolio-details-3.html">
-                              Portfolio Details 3
-                            </a>
-                          </li>
-                          <li>
-                            <a href="portfolio-details-4.html">
-                              Portfolio Details 4
-                            </a>
-                          </li>
-                          <li>
-                            <a href="portfolio-details-5.html">
-                              Portfolio Details 5
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
                 </li>
                 <li className="has-mega-menu sub-menu-down">
-                  <a href="javascript:void(0);">
+                  <a href="#">
                     <span>Pages</span>
                     <i className="fas fa-chevron-down tabindex"></i>
                   </a>
-                  <div className="mega-menu">
-                    <div className="row justify-content-md-between">
-                      <div className="col-md-2 col-sm-4 col-6">
-                        <a href="javascript:;" className="menu-title">
-                          Pages
-                        </a>
-                        <ul>
-                          <li>
-                            <a href="about-us.html">About Us</a>
-                          </li>
-                          <li>
-                            <a href="about-me.html">About Me</a>
-                          </li>
-                          <li>
-                            <a href="pricing-table.html">Pricing Table</a>
-                          </li>
-                          <li>
-                            <a href="our-gift-vouchers.html">
-                              Our Gift Vouchers
-                            </a>
-                          </li>
-                          <li>
-                            <a href="what-we-do.html">What We Do</a>
-                          </li>
-                          <li>
-                            <a href="faqs-1.html">Faqs 1</a>
-                          </li>
-                          <li>
-                            <a href="faqs-2.html">Faqs 2</a>
-                          </li>
-                          <li>
-                            <a href="our-team.html">Our Team</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="col-md-2 col-sm-4 col-6">
-                        <a href="javascript:;" className="menu-title">
-                          Contact Us
-                        </a>
-                        <ul>
-                          <li>
-                            <a href="contact-us-1.html">Contact Us 1</a>
-                          </li>
-                          <li>
-                            <a href="contact-us-2.html">Contact Us 2</a>
-                          </li>
-                          <li>
-                            <a href="contact-us-3.html">Contact Us 3</a>
-                          </li>
-                        </ul>
-
-                        <a href="javascript:;" className="menu-title">
-                          Web Pages
-                        </a>
-                        <ul>
-                          <li>
-                            <a href="error-1.html">Error 404 1</a>
-                          </li>
-                          <li>
-                            <a href="error-2.html">Error 404 2</a>
-                          </li>
-                          <li>
-                            <a href="coming-soon.html">Coming Soon</a>
-                          </li>
-                          <li>
-                            <a href="under-construction.html">
-                              Under Construction
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="col-md-2 col-sm-4 col-6">
-                        <a href="javascript:;" className="menu-title">
-                          Banner Style
-                        </a>
-                        <ul>
-                          <li>
-                            <a href="banner-with-bg-color.html">
-                              Banner with BG Color
-                            </a>
-                          </li>
-                          <li>
-                            <a href="banner-with-image.html">
-                              Banner with Image
-                            </a>
-                          </li>
-                          <li>
-                            <a href="banner-with-video.html">
-                              Banner with Video
-                            </a>
-                          </li>
-                          <li>
-                            <a href="banner-with-kanbern.html">
-                              Banner with Kanbern
-                            </a>
-                          </li>
-                          <li>
-                            <a href="banner-small.html">Banner Small</a>
-                          </li>
-                          <li>
-                            <a href="banner-medium.html">Banner Medium</a>
-                          </li>
-                          <li>
-                            <a href="banner-large.html">Banner Large</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="col-md-2 col-sm-4 col-6">
-                        <a href="javascript:;" className="menu-title">
-                          Header Style
-                        </a>
-                        <ul>
-                          <li>
-                            <a href="header-style-1.html">Header Style 1</a>
-                          </li>
-                          <li>
-                            <a href="header-style-2.html">Header Style 2</a>
-                          </li>
-                          <li>
-                            <a href="header-style-3.html">Header Style 3</a>
-                          </li>
-                          <li>
-                            <a href="header-style-4.html">Header Style 4</a>
-                          </li>
-                          <li>
-                            <a href="header-style-5.html">Header Style 5</a>
-                          </li>
-                          <li>
-                            <a href="header-style-6.html">Header Style 6</a>
-                          </li>
-                          <li>
-                            <a href="header-style-7.html">Header Style 7</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="col-md-2 col-sm-4 col-6">
-                        <a href="javascript:;" className="menu-title">
-                          Footer Style
-                        </a>
-                        <ul>
-                          <li>
-                            <a href="footer-style-1.html">Footer Style 1</a>
-                          </li>
-                          <li>
-                            <a href="footer-style-2.html">Footer Style 2</a>
-                          </li>
-                          <li>
-                            <a href="footer-style-3.html">Footer Style 3</a>
-                          </li>
-                          <li>
-                            <a href="footer-style-4.html">Footer Style 4</a>
-                          </li>
-                          <li>
-                            <a href="footer-style-5.html">Footer Style 5</a>
-                          </li>
-                          <li>
-                            <a href="footer-style-6.html">Footer Style 6</a>
-                          </li>
-                          <li>
-                            <a href="footer-style-7.html">Footer Style 7</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
                 </li>
               </ul>
               <div className="dz-social-icon">
@@ -1235,6 +562,7 @@ const MainHeader = () => {
                     <a
                       className="fab fa-facebook-f"
                       target="_blank"
+                      rel="noreferrer"
                       href="https://www.facebook.com/dexignzone"
                     ></a>
                   </li>
@@ -1242,6 +570,7 @@ const MainHeader = () => {
                     <a
                       className="fab fa-twitter"
                       target="_blank"
+                      rel="noreferrer"
                       href="https://twitter.com/dexignzones"
                     ></a>
                   </li>
@@ -1249,6 +578,7 @@ const MainHeader = () => {
                     <a
                       className="fab fa-linkedin-in"
                       target="_blank"
+                      rel="noreferrer"
                       href="https://www.linkedin.com/showcase/3686700/admin/"
                     ></a>
                   </li>
@@ -1256,6 +586,7 @@ const MainHeader = () => {
                     <a
                       className="fab fa-instagram"
                       target="_blank"
+                      rel="noreferrer"
                       href="https://www.instagram.com/dexignzone/"
                     ></a>
                   </li>
@@ -1274,7 +605,7 @@ const MainHeader = () => {
                   <li className="nav-item search-link">
                     <a
                       className="nav-link"
-                      href="javascript:void(0);"
+                      href="#"
                       data-bs-toggle="offcanvas"
                       data-bs-target="#offcanvasTop"
                       aria-controls="offcanvasTop"
@@ -1285,7 +616,7 @@ const MainHeader = () => {
                   <li className="nav-item wishlist-link">
                     <a
                       className="nav-link"
-                      href="javascript:void(0);"
+                      href="#"
                       data-bs-toggle="offcanvas"
                       data-bs-target="#offcanvasRight"
                       aria-controls="offcanvasRight"
@@ -1295,7 +626,7 @@ const MainHeader = () => {
                   </li>
                   <li className="nav-item cart-link">
                     <a
-                      href="javascript:void(0);"
+                      href="#"
                       className="nav-link cart-btn"
                       data-bs-toggle="offcanvas"
                       data-bs-target="#offcanvasRight"
