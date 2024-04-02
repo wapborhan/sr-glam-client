@@ -19374,6 +19374,7 @@ section {
   -ms-transition: all 0.25s;
   transition: all 0.25s;
   opacity: 0;
+  width: 473.333px !important;
 }
 
 .main-slider.style-1 .main-swiper-thumb .swiper-slide.swiper-slide-active {
@@ -19484,9 +19485,9 @@ section {
 }
 
 .main-slider.style-1 .banner-content {
-  padding-top: 150px;
+  padding-top: 50px;
   padding-bottom: 60px;
-  height: 950px;
+  /* height: 950px; */
 }
 
 @media only screen and (max-width: 1480px) {
@@ -42779,8 +42780,8 @@ del {
 
 .animation-btn {
   position: absolute;
-  top: 65%;
-  left: 39%;
+  top: 60%;
+  left: 50%;
   z-index: 999;
   width: 140px;
 }

@@ -1,37 +1,51 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
-import { useEffect } from "react";
+import "swiper/css";
+import { useEffect, useRef } from "react";
 
 const Banner = () => {
-  useEffect(() => {
-    const handleTextChar = () => {
-      const wordRotateElements = document.querySelectorAll(".word-rotate");
-      wordRotateElements.forEach((data, _) => {
-        const wordRotate = data.textContent.split("");
-        const step = 360 / wordRotate.length;
-        wordRotate.forEach((el, i) => {
-          data
-            .closest(".word-rotate-box")
-            .insertAdjacentHTML(
-              "beforeend",
-              `<span class="text__char" style="--char-rotate: ${
-                i * step
-              }deg">${el}</span>`
-            );
-        });
-        data.remove();
-      });
-    };
+  const swiper1Ref = useRef(null);
+  const swiper2Ref = useRef(null);
 
-    handleTextChar();
-  }, []);
+  // const goNext = () => {
+  //   if (
+  //     swiper1Ref.current !== null &&
+  //     swiper1Ref.current.swiper !== null &&
+  //     swiper2Ref.current !== null &&
+  //     swiper2Ref.current.swiper !== null
+  //   ) {
+  //     swiper1Ref.current.swiper.slideNext();
+  //     swiper2Ref.current.swiper.slideNext();
+  //   }
+  // };
+
+  const goPrev = () => {
+    if (
+      swiper1Ref.current !== null &&
+      swiper1Ref.current.swiper !== null &&
+      swiper2Ref.current !== null &&
+      swiper2Ref.current.swiper !== null
+    ) {
+      swiper1Ref.current.swiper.slidePrev();
+      swiper2Ref.current.swiper.slidePrev();
+    }
+  };
+
   return (
     <div className="main-slider style-1">
       <div className="container-fluid">
         <div className="banner-content">
           <div className="row">
             <div className="col-lg-6 col-md-12">
-              <Swiper className="swiper main-swiper h-100">
+              <Swiper
+                className="swiper main-swiper h-100"
+                ref={swiper1Ref}
+                spaceBetween={50}
+                slidesPerView={1}
+                loop
+                allowTouchMove={false}
+                onSlideChange={() => console.log("Swiper 1 slide change")}
+              >
                 <div className="swiper-wrapper">
                   <SwiperSlide className="swiper-slide">
                     <div className="swiper-content">
@@ -284,7 +298,15 @@ const Banner = () => {
             </div>
             <div className="col-lg-6 col-md-12">
               <div className="swiper-area">
-                <Swiper className="swiper main-swiper-thumb">
+                <Swiper
+                  className="swiper main-swiper-thumb"
+                  ref={swiper2Ref}
+                  spaceBetween={50}
+                  slidesPerView={1}
+                  loop
+                  allowTouchMove={false}
+                  onSlideChange={() => console.log("Swiper 2 slide change")}
+                >
                   <div className="swiper-wrapper">
                     <SwiperSlide className="swiper-slide">
                       <div
@@ -340,7 +362,31 @@ const Banner = () => {
                   </div>
                 </Swiper>
                 <div className="pagination-align style-1">
-                  <div className="swiper-button-next tabindex">
+                  {/* <div className="swiper-button-next tabindex" onClick={goNext}>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M5 12H19"
+                        stroke="white"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M12 5L19 12L12 19"
+                        stroke="white"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </div> */}
+                  <div className="swiper-button-next tabindex" onClick={goPrev}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -365,30 +411,6 @@ const Banner = () => {
                     </svg>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div
-              className="bottom-content wow fadeInUp"
-              data-wow-delay="1.0s"
-              data-swiper-parallax="-60"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="76"
-                height="76"
-                viewBox="0 0 76 76"
-                fill="none"
-              >
-                <path
-                  d="M52.6617 37.6496L58.7381 40.0325L75.0609 49.0874L66.6016 63.7422L49.9214 54.6872L45.1557 50.7554L46.1088 57.1892V75.18H28.952V57.1892L30.0243 50.5171L24.9011 54.6872L8.45924 63.7422L0 49.0874L16.3228 39.7942L22.3991 37.6496L16.3228 35.1475L0 26.2117L8.45924 11.557L25.1394 20.4928L30.0243 24.6629L28.952 18.3482V0H46.1088V18.3482L45.1557 24.4246L49.9214 20.4928L66.6016 11.557L75.0609 26.2117L58.7381 35.3858L52.6617 37.6496Z"
-                  fill="black"
-                />
-              </svg>
-              <div>
-                <span className="sub-title">Summer Collection</span>
-                <h4 className="title">
-                  Trendy and Classic htmlFor the New Season
-                </h4>
               </div>
             </div>
           </div>

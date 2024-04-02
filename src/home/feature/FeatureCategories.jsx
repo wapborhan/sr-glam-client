@@ -1,8 +1,20 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
-import { useEffect } from "react";
+import { useCallback, useEffect, useRef } from "react";
 
 const FeatureCategories = () => {
+  const sliderRef = useRef(null);
+
+  const handlePrev = useCallback(() => {
+    if (!sliderRef.current) return;
+    sliderRef.current.swiper.slidePrev();
+  }, []);
+
+  const handleNext = useCallback(() => {
+    if (!sliderRef.current) return;
+    sliderRef.current.swiper.slideNext();
+  }, []);
+
   useEffect(() => {
     const handleTextChar = () => {
       const wordRotateElements = document.querySelectorAll(".word-rotate");
@@ -34,6 +46,7 @@ const FeatureCategories = () => {
               slidesPerView={4}
               autoplay
               loop
+              ref={sliderRef}
               className="swiper swiper-shop"
             >
               <div className="swiper-wrapper">
@@ -182,7 +195,7 @@ const FeatureCategories = () => {
                 className="pagination-align wow fadeInUp"
                 data-wow-delay="1.6s"
               >
-                <div className="shop-button-prev">
+                <div className="shop-button-prev" onClick={handlePrev}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="35"
@@ -196,7 +209,7 @@ const FeatureCategories = () => {
                     />
                   </svg>
                 </div>
-                <div className="shop-button-next">
+                <div className="shop-button-next" onClick={handleNext}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="35"
