@@ -1,7 +1,7 @@
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import "swiper/css";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const Banner = () => {
   const swiper1Ref = useRef(null);
