@@ -3,6 +3,7 @@ import Header from "../components/header/Header";
 import About from "./about/About";
 import Banner from "./banner/Banner";
 import FeatureCategories from "./feature/FeatureCategories";
+import Products from "./products/Products";
 
 const Homepage = () => {
   return (
@@ -11,6 +12,7 @@ const Homepage = () => {
       <Banner />
       <FeatureCategories />
       <About />
+      <Products />
       <Footer />
     </div>
   );
