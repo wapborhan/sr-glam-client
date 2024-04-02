@@ -1,7 +1,30 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
+import { useEffect } from "react";
 
 const Banner = () => {
+  useEffect(() => {
+    const handleTextChar = () => {
+      const wordRotateElements = document.querySelectorAll(".word-rotate");
+      wordRotateElements.forEach((data, _) => {
+        const wordRotate = data.textContent.split("");
+        const step = 360 / wordRotate.length;
+        wordRotate.forEach((el, i) => {
+          data
+            .closest(".word-rotate-box")
+            .insertAdjacentHTML(
+              "beforeend",
+              `<span class="text__char" style="--char-rotate: ${
+                i * step
+              }deg">${el}</span>`
+            );
+        });
+        data.remove();
+      });
+    };
+
+    handleTextChar();
+  }, []);
   return (
     <div className="main-slider style-1">
       <div className="container-fluid">
@@ -328,16 +351,16 @@ const Banner = () => {
                       <path
                         d="M5 12H19"
                         stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                       <path
                         d="M12 5L19 12L12 19"
                         stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   </div>

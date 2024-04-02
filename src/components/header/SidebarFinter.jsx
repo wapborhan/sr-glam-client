@@ -2,7 +2,7 @@ const SidebarFinter = () => {
   return (
     <div
       className="offcanvas dz-offcanvas offcanvas offcanvas-end"
-      tabindex="-1"
+      tabIndex="-1"
       id="offcanvasLeft"
     >
       <button
@@ -16,13 +16,13 @@ const SidebarFinter = () => {
       <div className="offcanvas-body">
         <div className="product-description">
           <div className="widget widget_search">
-            <div className="form-group">
+            <div className="htmlForm-group">
               <div className="input-group">
                 <input
                   name="dzSearch"
                   required="required"
                   type="search"
-                  className="form-control"
+                  className="htmlForm-control"
                   placeholder="Search Product"
                 />
                 <div className="input-group-addon">
@@ -59,9 +59,9 @@ const SidebarFinter = () => {
           <div className="widget">
             <h6 className="widget-title">Color</h6>
             <div className="d-flex align-items-center flex-wrap color-filter ps-2">
-              <div className="form-check">
+              <div className="htmlForm-check">
                 <input
-                  className="form-check-input"
+                  className="htmlForm-check-input"
                   type="radio"
                   name="radioNoLabel"
                   id="radioNoLabel1"
@@ -71,9 +71,9 @@ const SidebarFinter = () => {
                 />
                 <span></span>
               </div>
-              <div className="form-check">
+              <div className="htmlForm-check">
                 <input
-                  className="form-check-input"
+                  className="htmlForm-check-input"
                   type="radio"
                   name="radioNoLabel"
                   id="radioNoLabel2"
@@ -82,9 +82,9 @@ const SidebarFinter = () => {
                 />
                 <span></span>
               </div>
-              <div className="form-check">
+              <div className="htmlForm-check">
                 <input
-                  className="form-check-input"
+                  className="htmlForm-check-input"
                   type="radio"
                   name="radioNoLabel"
                   id="radioNoLabel3"
@@ -93,9 +93,9 @@ const SidebarFinter = () => {
                 />
                 <span></span>
               </div>
-              <div className="form-check">
+              <div className="htmlForm-check">
                 <input
-                  className="form-check-input"
+                  className="htmlForm-check-input"
                   type="radio"
                   name="radioNoLabel"
                   id="radioNoLabel4"
@@ -104,9 +104,9 @@ const SidebarFinter = () => {
                 />
                 <span></span>
               </div>
-              <div className="form-check">
+              <div className="htmlForm-check">
                 <input
-                  className="form-check-input"
+                  className="htmlForm-check-input"
                   type="radio"
                   name="radioNoLabel"
                   id="radioNoLabel5"
@@ -115,9 +115,9 @@ const SidebarFinter = () => {
                 />
                 <span></span>
               </div>
-              <div className="form-check">
+              <div className="htmlForm-check">
                 <input
-                  className="form-check-input"
+                  className="htmlForm-check-input"
                   type="radio"
                   name="radioNoLabel"
                   id="radioNoLabel6"
@@ -126,9 +126,9 @@ const SidebarFinter = () => {
                 />
                 <span></span>
               </div>
-              <div className="form-check">
+              <div className="htmlForm-check">
                 <input
-                  className="form-check-input"
+                  className="htmlForm-check-input"
                   type="radio"
                   name="radioNoLabel"
                   id="radioNoLabel7"
@@ -137,9 +137,9 @@ const SidebarFinter = () => {
                 />
                 <span></span>
               </div>
-              <div className="form-check">
+              <div className="htmlForm-check">
                 <input
-                  className="form-check-input"
+                  className="htmlForm-check-input"
                   type="radio"
                   name="radioNoLabel"
                   id="radioNoLabel8"
@@ -148,9 +148,9 @@ const SidebarFinter = () => {
                 />
                 <span></span>
               </div>
-              <div className="form-check">
+              <div className="htmlForm-check">
                 <input
-                  className="form-check-input"
+                  className="htmlForm-check-input"
                   type="radio"
                   name="radioNoLabel"
                   id="radioNoLabel9"
@@ -159,9 +159,9 @@ const SidebarFinter = () => {
                 />
                 <span></span>
               </div>
-              <div className="form-check">
+              <div className="htmlForm-check">
                 <input
-                  className="form-check-input"
+                  className="htmlForm-check-input"
                   type="radio"
                   name="radioNoLabel"
                   id="radioNoLabe20"
@@ -182,7 +182,7 @@ const SidebarFinter = () => {
                 id="btnradio11"
                 checked=""
               />
-              <label className="btn" for="btnradio11">
+              <label className="btn" htmlFor="btnradio11">
                 4
               </label>
 
@@ -192,7 +192,7 @@ const SidebarFinter = () => {
                 name="btnradio1"
                 id="btnradio21"
               />
-              <label className="btn" for="btnradio21">
+              <label className="btn" htmlFor="btnradio21">
                 6
               </label>
 
@@ -202,7 +202,7 @@ const SidebarFinter = () => {
                 name="btnradio1"
                 id="btnradio31"
               />
-              <label className="btn" for="btnradio31">
+              <label className="btn" htmlFor="btnradio31">
                 8
               </label>
 
@@ -212,7 +212,7 @@ const SidebarFinter = () => {
                 name="btnradio1"
                 id="btnradio41"
               />
-              <label className="btn" for="btnradio41">
+              <label className="btn" htmlFor="btnradio41">
                 10
               </label>
 
@@ -222,7 +222,7 @@ const SidebarFinter = () => {
                 name="btnradio1"
                 id="btnradio51"
               />
-              <label className="btn" for="btnradio51">
+              <label className="btn" htmlFor="btnradio51">
                 12
               </label>
 
@@ -232,7 +232,7 @@ const SidebarFinter = () => {
                 name="btnradio1"
                 id="btnradio61"
               />
-              <label className="btn" for="btnradio61">
+              <label className="btn" htmlFor="btnradio61">
                 14
               </label>
 
@@ -242,7 +242,7 @@ const SidebarFinter = () => {
                 name="btnradio1"
                 id="btnradio71"
               />
-              <label className="btn" for="btnradio71">
+              <label className="btn" htmlFor="btnradio71">
                 16
               </label>
 
@@ -252,7 +252,7 @@ const SidebarFinter = () => {
                 name="btnradio1"
                 id="btnradio81"
               />
-              <label className="btn" for="btnradio81">
+              <label className="btn" htmlFor="btnradio81">
                 18
               </label>
 
@@ -262,7 +262,7 @@ const SidebarFinter = () => {
                 name="btnradio1"
                 id="btnradio91"
               />
-              <label className="btn" for="btnradio91">
+              <label className="btn" htmlFor="btnradio91">
                 20
               </label>
             </div>
@@ -310,7 +310,7 @@ const SidebarFinter = () => {
               <a href="blog-tag.html">Navy</a>
               <a href="blog-tag.html">Urban</a>
               <a href="blog-tag.html">Business Meeting</a>
-              <a href="blog-tag.html">Formal</a>
+              <a href="blog-tag.html">htmlFormal</a>
             </div>
           </div>
           <a href="#" className="btn btn-sm font-14 btn-secondary btn-sharp">

@@ -151,7 +151,7 @@ const SideBarCart = () => {
                       </div>
                       <div className="shipping-content">
                         <h6 className="title pe-4">
-                          Congratulations , you've got free shipping!
+                          Congratulations ,{" you've "}got free shipping!
                         </h6>
                         <div className="progress">
                           <div
