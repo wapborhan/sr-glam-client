@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import Footer from "../components/footer/Footer";
-import Header from "../components/header/Header";
 import About from "./about/About";
 import Adv from "./adv/Adv";
 import Banner from "./banner/Banner";
@@ -34,8 +32,7 @@ const Homepage = () => {
     });
   };
   return (
-    <div className="page-wraper" id="scroll-container">
-      <Header />
+    <>
       <Banner />
       <FeatureCategories />
       <About />
@@ -43,7 +40,6 @@ const Homepage = () => {
       <Adv />
       <Blockbuster />
       <Collection />
-      <Footer />{" "}
       <button
         className={`scroltop ${isVisible ? "visible" : ""}`}
         style={{ display: `${isVisible ? "inline-block" : ""}` }}
@@ -51,7 +47,7 @@ const Homepage = () => {
       >
         <i className="fas fa-arrow-up"></i>
       </button>
-    </div>
+    </>
   );
 };
 
