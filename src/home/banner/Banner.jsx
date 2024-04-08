@@ -60,53 +60,7 @@ const Banner = () => {
                         <div
                           className="swiper-meta-items"
                           data-swiper-parallax="-50"
-                        >
-                          <div
-                            className="meta-content wow fadeInUp"
-                            data-wow-delay="0.4s"
-                          >
-                            <span className="price-name">Price</span>
-                            <span className="price-num">$168</span>
-                          </div>
-                          <div
-                            className="meta-content wow fadeInUp"
-                            data-wow-delay="0.6s"
-                          >
-                            <span className="color-name">Select Size</span>
-                            <div className="btn-group product-size">
-                              <input
-                                type="radio"
-                                className="btn-check"
-                                name="btnradio1"
-                                id="btnradio101"
-                                checked=""
-                              />
-                              <label className="btn" htmlFor="btnradio101">
-                                S
-                              </label>
-
-                              <input
-                                type="radio"
-                                className="btn-check"
-                                name="btnradio1"
-                                id="btnradiol02"
-                              />
-                              <label className="btn" htmlFor="btnradiol02">
-                                M
-                              </label>
-
-                              <input
-                                type="radio"
-                                className="btn-check"
-                                name="btnradio1"
-                                id="btnradiol03"
-                              />
-                              <label className="btn" htmlFor="btnradiol03">
-                                L
-                              </label>
-                            </div>
-                          </div>
-                        </div>
+                        ></div>
 
                         <div
                           className="content-btn m-b30 wow fadeInUp"
@@ -319,7 +273,7 @@ const Banner = () => {
                           data-swiper-parallax="-100"
                         >
                           <img
-                            src="images/banner/banner-media.png"
+                            src="images/banner/banner-media.jpg"
                             alt="banner-media"
                           />
                         </div>
@@ -336,7 +290,7 @@ const Banner = () => {
                           data-swiper-parallax="-100"
                         >
                           <img
-                            src="images/banner/banner-media2.png"
+                            src="images/banner/banner-media2.jpg"
                             alt="banner-media"
                           />
                         </div>
@@ -353,7 +307,7 @@ const Banner = () => {
                           data-swiper-parallax="-100"
                         >
                           <img
-                            src="images/banner/banner-media3.png"
+                            src="images/banner/banner-media3.jpg"
                             alt="banner-media"
                           />
                         </div>
