@@ -7,7 +7,9 @@ const Root = () => {
   return (
     <div className="page-wraper" id="scroll-container">
       <Header />
-      <Outlet />
+      <div className="page-content bg-light">
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );

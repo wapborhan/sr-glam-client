@@ -1,3 +1,5 @@
+import { Link, NavLink } from "react-router-dom";
+
 const MainHeader = () => {
   return (
     <>
@@ -5,9 +7,10 @@ const MainHeader = () => {
       <div className="header-info-bar">
         <div className="container clearfix">
           <div className="logo-header logo-dark">
-            <a href="index-2.html">
-              <img src="images/logo.svg" alt="logo" />
-            </a>
+            <Link to="/">
+              {/* <img src="images/logo-main.png" alt="logo" /> */}
+              {"Sraboni's Glam"}
+            </Link>
           </div>
 
           <div className="extra-nav d-md-flex d-none">
@@ -78,9 +81,9 @@ const MainHeader = () => {
         <div className="main-bar clearfix">
           <div className="container clearfix d-lg-flex d-block">
             <div className="logo-header logo-dark">
-              <a href="index-2.html">
+              <Link to="/">
                 <img src="images/logo.svg" alt="logo" />
-              </a>
+              </Link>
             </div>
 
             <button
@@ -102,9 +105,9 @@ const MainHeader = () => {
               id="navbarNavDropdown"
             >
               <div className="logo-header">
-                <a href="index-2.html">
+                <Link to="/">
                   <img src="images/logo.svg" alt="" />
-                </a>
+                </Link>
               </div>
               <div className="browse-category-menu">
                 <a href="#" className="category-btn">
@@ -532,10 +535,10 @@ const MainHeader = () => {
                   </a>
                 </li>
                 <li className="has-mega-menu sub-menu-down">
-                  <a href="#">
+                  <NavLink to="/shop">
                     <span>Shop</span>
                     <i className="fas fa-chevron-down tabindex"></i>
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="has-mega-menu sub-menu-down">
                   <a href="#">
@@ -598,9 +601,13 @@ const MainHeader = () => {
               <div className="extra-cell">
                 <ul className="header-right">
                   <li className="nav-item login-link">
-                    <a className="nav-link" href="shop-my-account.html">
+                    <Link
+                      to="/login"
+                      className="nav-link"
+                      href="shop-my-account.html"
+                    >
                       Login / Register
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item search-link">
                     <a
