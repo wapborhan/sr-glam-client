@@ -10,8 +10,7 @@ const MainHeader = () => {
         <div className="container clearfix">
           <div className="logo-header logo-dark">
             <Link to="/">
-              {/* <img src="images/logo-main.png" alt="logo" /> */}
-              {"Sraboni's Glam"}
+              <img src="/images/logo-main.png" alt="Sraboni's Glam" />
             </Link>
           </div>
 

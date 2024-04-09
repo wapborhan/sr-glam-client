@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="site-footer style-1">
+    <footer className="site-footer bg-light">
       {/* <!-- Footer Top --> */}
       <div className="footer-top">
         <div className="container">
@@ -12,59 +12,30 @@ const Footer = () => {
               <div className="widget widget_about me-2">
                 <div className="footer-logo logo-white">
                   <a href="index-2.html">
-                    <img src="images/logo.svg" alt="" />
+                    <img src="/images/logo-main.png" alt="" />
                   </a>
                 </div>
                 <ul className="widget-address">
                   <li>
                     <p>
-                      <span>Address</span> : 451 Wall Street, UK, London
+                      <span>Address</span> : Savar, Dhaka, Bangladesh
                     </p>
                   </li>
                   <li>
                     <p>
-                      <span>E-mail</span> : example@info.com
+                      <span>E-mail</span> :
+                      <a href="mailto:sr.sraboni979@gmail.com">
+                        info@srabonisglam.com
+                      </a>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <span>Phone</span> : (064) 332-1233
+                      <span>Phone</span> :
+                      <a href="tel:+8801930323626">+880 1930-323-626</a>
                     </p>
                   </li>
                 </ul>
-                <div className="subscribe_widget">
-                  <h6 className="title fw-medium text-capitalize">
-                    subscribe to our newsletter
-                  </h6>
-                  <form
-                    className="dzSubscribe style-1"
-                    action="https://pixio.dexignzone.com/xhtml/script/mailchamp.php"
-                    method="post"
-                  >
-                    <div className="dzSubscribeMsg"></div>
-                    <div className="form-group">
-                      <div className="input-group mb-0">
-                        <input
-                          name="dzEmail"
-                          required="required"
-                          type="email"
-                          className="form-control"
-                          placeholder="Your Email Address"
-                        />
-                        <div className="input-group-addon">
-                          <button
-                            name="submit"
-                            value="Submit"
-                            type="submit"
-                            className="btn"
-                          >
-                            <i className="icon feather icon-arrow-right"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
               </div>
             </div>
             <div
