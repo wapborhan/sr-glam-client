@@ -1,5 +1,3 @@
-import React from "react";
-
 const DetailsPic = () => {
   return (
     <div className="dz-product-detail sticky-top">

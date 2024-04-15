@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import { useCallback, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const FeatureCategories = () => {
   const sliderRef = useRef(null);
@@ -43,7 +44,7 @@ const FeatureCategories = () => {
         <div className="row">
           <div className="col-lg-8 left-box">
             <Swiper
-              slidesPerView={4}
+              slidesPerView={3}
               autoplay
               loop
               ref={sliderRef}
@@ -62,7 +63,7 @@ const FeatureCategories = () => {
                       />
                     </div>
                     <h6 className="product-name">
-                      <a href="shop-with-category.html">Shirts</a>
+                      <Link to="/shop">Earrings</Link>
                     </h6>
                   </div>
                 </SwiperSlide>
@@ -78,7 +79,7 @@ const FeatureCategories = () => {
                       />
                     </div>
                     <h6 className="product-name">
-                      <a href="shop-with-category.html">Shorts</a>
+                      <Link to="/shop">Locket</Link>
                     </h6>
                   </div>
                 </SwiperSlide>
@@ -94,7 +95,7 @@ const FeatureCategories = () => {
                       />
                     </div>
                     <h6 className="product-name">
-                      <a href="shop-with-category.html">t-Shirt</a>
+                      <Link to="/shop">Cosmetics</Link>
                     </h6>
                   </div>
                 </SwiperSlide>
@@ -110,23 +111,7 @@ const FeatureCategories = () => {
                       />
                     </div>
                     <h6 className="product-name">
-                      <a href="shop-with-category.html">t-Jeans</a>
-                    </h6>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                  <div
-                    className="shop-box style-1 wow fadeInUp"
-                    data-wow-delay="0.9s"
-                  >
-                    <div className="dz-media">
-                      <img
-                        src="images/shop/product/clothes/5.png"
-                        alt="image"
-                      />
-                    </div>
-                    <h6 className="product-name">
-                      <a href="shop-with-category.html">t-Jeans</a>
+                      <Link to="/shop">Lotion</Link>
                     </h6>
                   </div>
                 </SwiperSlide>
@@ -137,12 +122,12 @@ const FeatureCategories = () => {
                   >
                     <div className="dz-media">
                       <img
-                        src="images/shop/product/clothes/2.png"
+                        src="images/shop/product/clothes/5.png"
                         alt="image"
                       />
                     </div>
                     <h6 className="product-name">
-                      <a href="shop-with-category.html">Shorts</a>
+                      <Link to="/shop">Bracelet</Link>
                     </h6>
                   </div>
                 </SwiperSlide>
@@ -158,13 +143,13 @@ const FeatureCategories = () => {
                       />
                     </div>
                     <h6 className="product-name">
-                      <a href="shop-with-category.html">t-Shirt</a>
+                      <Link to="/shop">Cosmetics</Link>
                     </h6>
                   </div>
                 </SwiperSlide>
               </div>
             </Swiper>
-            <a className="icon-button" href="shop-standard.html">
+            <a className="icon-button" to="shop-standard.html">
               <div className="text-row word-rotate-box c-black border-secondary">
                 <span className="word-rotate">More Collection Explore </span>
                 <svg
@@ -225,7 +210,7 @@ const FeatureCategories = () => {
                 </div>
               </div>
             </div>
-            <a className="icon-button" href="shop-standard.html">
+            <Link className="icon-button" to="/shop">
               <div className="text-row word-rotate-box c-black border-white">
                 <span className="word-rotate">More Collection Explore </span>
                 <svg
@@ -242,7 +227,7 @@ const FeatureCategories = () => {
                   ></path>
                 </svg>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
