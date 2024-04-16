@@ -308,7 +308,7 @@ const Banner = () => {
         className="animation-btn popup-youtube"
         href="https://www.youtube.com/watch?v=YwYoyQ1JdpQ"
       >
-        <div className="text-row word-rotate-box c-black">
+        <div className="text-row word-rotate-box c-black border-secondary">
           <span className="word-rotate">More Collection Explore </span>
           <i className="fa-solid fa-play text-secondary badge__emoji"></i>
         </div>
