@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Collection = () => {
   return (
     <section className="collection-bx content-inner-3 overflow-hidden">
@@ -6,13 +8,13 @@ const Collection = () => {
           Upgrade your style with our top-notch collection.
         </h2>
         <div className="text-center">
-          <a
-            href="shop-list.html"
+          <Link
+            to="/shop"
             className="btn btn-secondary btn-lg wow fadeInUp m-b30"
             data-wow-delay="0.4s"
           >
             All Collections
-          </a>
+          </Link>
         </div>
       </div>
       <div className="collection1">

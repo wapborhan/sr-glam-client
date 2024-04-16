@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Adv = () => {
   return (
     <section className="adv-area">
@@ -19,12 +21,12 @@ const Adv = () => {
                 <h2 className="sale-name">
                   Summer<span>2023</span>
                 </h2>
-                <a
-                  href="shop-list.html"
+                <Link
+                  to="/shop"
                   className="btn btn-outline-secondary btn-lg text-uppercase"
                 >
                   Shop Now
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -44,12 +46,12 @@ const Adv = () => {
                   <div className="badge style-1 mb-3">Sale Up to 50% Off</div>
                   <h2 className="product-name">New Summer Collection</h2>
                 </div>
-                <a
-                  href="shop-list.html"
+                <Link
+                  to="/shop"
                   className="btn btn-secondary btn-lg text-uppercase"
                 >
                   Shop Now
-                </a>
+                </Link>
               </div>
             </div>
           </div>

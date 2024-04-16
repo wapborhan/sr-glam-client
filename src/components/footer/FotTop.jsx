@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const FotTop = () => {
   return (
     <div className="content-inner py-0  image-wrapper">
@@ -63,8 +65,8 @@ const FotTop = () => {
               </a>
             </div>
           </div>
-          <a
-            href="https://www.instagram.com/dexignzone/"
+          <Link
+            to="https://www.tiktok.com/@srabonis.glam"
             className="instagram-link"
           >
             <div className="follow-link  wow bounceIn" data-wow-delay="0.1s">
@@ -75,7 +77,7 @@ const FotTop = () => {
                 <p className="m-0">Follow @{"Sraboni's Glam"}</p>
               </div>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

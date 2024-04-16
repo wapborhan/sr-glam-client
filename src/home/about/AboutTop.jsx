@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const AboutTop = () => {
   return (
     <section className="content-inner overflow-hidden">
@@ -11,12 +13,12 @@ const AboutTop = () => {
               <div className="dz-media h-100">
                 <img src="images/women.png" alt="" />
               </div>
-              <a
-                href="shop-list.html"
+              <Link
+                to="/shop"
                 className="btn btn-outline-secondary btn-light btn-xl"
               >
-                Woman collection
-              </a>
+                Woman Fashion
+              </Link>
             </div>
           </div>
           <div className="col-lg-6 col-md-12 align-self-center">
@@ -34,10 +36,10 @@ const AboutTop = () => {
                   standard dummy text ever since the
                 </p>
               </div>
-              <a
+              <Link
                 className="service-btn-2 wow fadeInUp"
                 data-wow-delay="0.6s"
-                href="about-us.html"
+                to="/about"
               >
                 <span className="icon-wrapper">
                   <svg
@@ -63,7 +65,7 @@ const AboutTop = () => {
                     />
                   </svg>
                 </span>
-              </a>
+              </Link>
 
               <div className="row">
                 <div className="col-lg-6 col-md-6 col-sm-6">
@@ -75,12 +77,12 @@ const AboutTop = () => {
                       <img src="images/shop/product/medium/1.png" alt="image" />
                     </div>
                     <div className="dz-content">
-                      <a
-                        href="shop-list.html"
+                      <Link
+                        to="/shop"
                         className="btn btn-outline-secondary btn-light btn-md"
                       >
-                        Child Fashion
-                      </a>
+                        Baby Care
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -89,19 +91,19 @@ const AboutTop = () => {
                     className="shop-card style-6 wow fadeInUp"
                     data-wow-delay="1.0s"
                   >
-                    <div className="dz-media">
-                      <img src="images/shop/product/medium/2.png" alt="image" />
+                    <div className="dz-media h-full">
+                      <img src="/images/clothe/feature/5.png" alt="image" />
                     </div>
                     <div className="dz-content">
-                      <a
-                        href="shop-list.html"
+                      <Link
+                        to="/shop"
                         className="btn btn-outline-secondary btn-light btn-md"
                       >
-                        Man collection
-                      </a>
+                        Girls Beauty
+                      </Link>
                     </div>
                     <span className="sale-badge">
-                      50%
+                      5%
                       <br />
                       Sale <img src="images/star.png" alt="" />
                     </span>
