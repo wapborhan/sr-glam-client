@@ -20,6 +20,16 @@ const Register = () => {
               </p>
               <form>
                 <div className="m-b25">
+                  <label className="label-title">Profile Picture</label>
+                  <input
+                    name="dzName"
+                    required=""
+                    className="form-control"
+                    placeholder="Username"
+                    type="text"
+                  />
+                </div>
+                <div className="m-b25">
                   <label className="label-title">Username</label>
                   <input
                     name="dzName"
