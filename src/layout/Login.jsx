@@ -9,7 +9,7 @@ const Login = () => {
             <div className="login-area">
               <h2 className="text-secondary text-center">Welcome Back</h2>
               <p className="text-center m-b25">
-                welcome please login to your account
+                welcome please login to your account.
               </p>
               <form>
                 <div className="m-b30">
